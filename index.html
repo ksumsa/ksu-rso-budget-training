@@ -1,0 +1,2916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>KSU RSO Supplemental Budget Training</title>
+
+    <link
+        rel="stylesheet"
+        href="css/styles.css"
+    >
+</head>
+
+<body>
+
+    <!-- =========================================
+         APPLICATION
+    ========================================== -->
+
+    <div class="app-shell">
+
+
+        <!-- =========================================
+             TOP HEADER
+        ========================================== -->
+
+        <header class="top-header">
+
+            <div class="top-header-left">
+
+                <button
+                    type="button"
+                    class="mobile-menu-button"
+                    id="mobileMenuButton"
+                    aria-label="Open navigation"
+                >
+                    ☰
+                </button>
+
+
+                <div class="brand-area">
+
+                    <div class="brand-mark">
+                        KSU
+                    </div>
+
+
+                    <div class="brand-text">
+
+                        <span class="brand-title">
+                            Owl Life
+                        </span>
+
+                        <span class="brand-subtitle">
+                            Registered Student Organizations
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="top-header-right">
+
+                <span class="training-badge">
+                    TRAINING SIMULATION
+                </span>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =========================================
+             BODY LAYOUT
+        ========================================== -->
+
+        <div class="app-body">
+
+
+            <!-- =========================================
+                 LEFT SIDEBAR
+            ========================================== -->
+
+            <aside
+                class="sidebar"
+                id="sidebar"
+            >
+
+                <nav
+                    class="sidebar-navigation"
+                    aria-label="Main Navigation"
+                >
+
+
+                    <button
+                        type="button"
+                        class="sidebar-link"
+                    >
+
+                        <span class="sidebar-icon">
+                            ⌂
+                        </span>
+
+                        <span>
+                            Home
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="sidebar-link"
+                    >
+
+                        <span class="sidebar-icon">
+                            ♙
+                        </span>
+
+                        <span>
+                            Organizations
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="sidebar-link"
+                    >
+
+                        <span class="sidebar-icon">
+                            ▣
+                        </span>
+
+                        <span>
+                            Events
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="sidebar-link active"
+                    >
+
+                        <span class="sidebar-icon">
+                            $
+                        </span>
+
+                        <span>
+                            Finance
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="sidebar-link"
+                    >
+
+                        <span class="sidebar-icon">
+                            ☷
+                        </span>
+
+                        <span>
+                            Forms
+                        </span>
+
+                    </button>
+
+
+                </nav>
+
+
+                <div class="sidebar-footer">
+
+                    <p>
+                        KSU RSO Treasurer Training
+                    </p>
+
+                </div>
+
+            </aside>
+
+
+
+            <!-- =========================================
+                 MAIN WORKSPACE
+            ========================================== -->
+
+            <main class="main-workspace">
+
+
+                <div class="workspace-container">
+
+
+                    <!-- =========================================
+                         TRAINING NOTICE
+                    ========================================== -->
+
+                    <div class="training-notice">
+
+                        <div class="training-notice-icon">
+                            i
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                Training Simulation
+                            </strong>
+
+                            <p>
+                                This website is a practice replica of the
+                                Supplemental Budget Request workflow used
+                                for Registered Student Organization
+                                treasurer training.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =========================================
+                         SCREEN CONTAINER
+
+                         Future pages will be placed here.
+                    ========================================== -->
+                    <div
+                        class="screen-container"
+                        id="screenContainer"
+                    >
+                    <!-- =========================================
+     BLOCK 2
+     BUDGET REQUESTS DASHBOARD
+========================================== -->
+
+<section
+    class="app-screen"
+    id="budgetDashboardScreen"
+>
+
+    <!-- PAGE HEADER -->
+
+    <div class="dashboard-page-header">
+
+        <h1 class="page-title">
+            Budget Requests
+        </h1>
+
+
+        <div class="dashboard-actions">
+
+            <span class="dashboard-actions-label">
+                ACTIONS
+            </span>
+
+
+            <button
+                type="button"
+                class="create-request-button"
+                id="createRequestButton"
+            >
+                CREATE REQUEST
+                <span class="button-arrow">▼</span>
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- DASHBOARD CONTENT -->
+
+    <div class="budget-dashboard-layout">
+
+
+        <!-- LEFT FILTER PANEL -->
+
+        <aside class="budget-filter-panel">
+
+            <div class="budget-filter-tabs">
+
+                <button
+                    type="button"
+                    class="budget-filter-tab active"
+                >
+                    Budget
+                </button>
+
+
+                <button
+                    type="button"
+                    class="budget-filter-tab"
+                >
+                    Purchase
+                </button>
+
+            </div>
+
+
+            <div class="budget-filter-search">
+
+                <input
+                    type="text"
+                    aria-label="Search budget requests"
+                    placeholder="Search"
+                >
+
+            </div>
+
+
+            <div class="budget-filter-options">
+
+                <button
+                    type="button"
+                    class="budget-filter-option active"
+                >
+                    Active
+                </button>
+
+
+                <button
+                    type="button"
+                    class="budget-filter-option"
+                >
+                    All Requests
+                </button>
+
+
+                <button
+                    type="button"
+                    class="budget-filter-option"
+                >
+                    Drafts
+                </button>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- REQUEST LIST -->
+
+        <div class="budget-request-panel">
+
+            <div class="budget-request-toolbar">
+
+                <span>
+                    Budget Requests
+                </span>
+
+
+                <span class="budget-sort-label">
+                    Sort by Submission
+                </span>
+
+            </div>
+
+
+            <div
+    class="training-request-empty"
+    id="budgetDashboardEmptyState"
+>
+
+    <strong>
+        Supplemental Budget Requests
+    </strong>
+
+    <p>
+        Use the Create Request button above to begin
+        the treasurer training workflow.
+    </p>
+
+</div>
+
+
+<div
+    class="saved-request-card hidden"
+    id="savedRequestCard"
+>
+
+    <div class="saved-request-main">
+
+        <div>
+
+            <span class="saved-request-status">
+                DRAFT
+            </span>
+
+
+            <h3 id="savedRequestTitle">
+                Supplemental Budget Request
+            </h3>
+
+
+            <p>
+                Program/Event Supplemental Funding
+            </p>
+
+        </div>
+
+
+        <button
+            type="button"
+            class="owl-button owl-button-primary"
+            id="resumeSavedRequest"
+        >
+            CONTINUE
+        </button>
+
+    </div>
+
+
+    <div class="saved-request-footer">
+
+        <span>
+            Last Saved:
+        </span>
+
+        <strong id="savedRequestDate">
+            —
+        </strong>
+
+    </div>
+
+</div>
+
+                <strong>
+                    Supplemental Budget Requests
+                </strong>
+
+                <p>
+                    Use the Create Request button above to begin
+                    the treasurer training workflow.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     BLOCK 2
+     CREATE NEW BUDGET REQUEST
+========================================== -->
+
+<section
+    class="app-screen hidden"
+    id="budgetSelectionScreen"
+>
+
+    <h1 class="page-title">
+        Create New Budget Request
+    </h1>
+
+
+    <div class="budget-selection-card">
+
+
+        <!-- CARD HEADER -->
+
+        <div class="budget-selection-header">
+
+            <h2>
+                Select a Process or Budget to Start Your Request
+            </h2>
+
+
+            <div class="selection-search">
+
+                <input
+                    type="text"
+                    aria-label="Search processes or budgets"
+                    placeholder="Search"
+                >
+
+                <span>
+                    🔍
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD CONTENT -->
+
+        <div class="budget-selection-content">
+
+
+            <!-- PROCESS -->
+
+            <div class="process-information">
+
+                <div class="process-label">
+                    Process:
+                </div>
+
+
+                <div class="process-details">
+
+                    <strong>
+                        Supplemental Budget Request
+                    </strong>
+
+
+                    <p>
+                        Available for Registered Student Organizations
+                        requesting supplemental funding.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PROGRAM / EVENT -->
+
+            <div class="budget-option-row">
+
+                <div class="budget-option-label">
+                    Budget:
+                </div>
+
+
+                <div class="budget-option-content">
+
+                    <button
+                        type="button"
+                        class="budget-option-link"
+                        id="programBudgetOption"
+                        data-budget-type="program"
+                    >
+                        Program/Event Supplemental Funding
+                    </button>
+
+
+                    <p>
+                        Request for supplemental funding to support
+                        a program or event.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PROMOTIONAL -->
+
+            <div class="budget-option-row">
+
+                <div class="budget-option-label">
+                    Budget:
+                </div>
+
+
+                <div class="budget-option-content">
+
+                    <button
+                        type="button"
+                        class="budget-option-link visual-only"
+                        data-budget-type="promotional"
+                        aria-disabled="true"
+                    >
+                        Promotional Supplemental Funding
+                    </button>
+
+
+                    <p>
+                        Request for supplemental funding to be used
+                        toward the purchase of promotional items.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TRAVEL -->
+
+            <div class="budget-option-row">
+
+                <div class="budget-option-label">
+                    Budget:
+                </div>
+
+
+                <div class="budget-option-content">
+
+                    <button
+                        type="button"
+                        class="budget-option-link visual-only"
+                        data-budget-type="travel"
+                        aria-disabled="true"
+                    >
+                        Travel Support Supplemental Funding Request
+                    </button>
+
+
+                    <p>
+                        Request for supplemental travel support funding.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- CARD FOOTER -->
+
+        <div class="budget-selection-footer">
+
+            <button
+                type="button"
+                class="owl-button owl-button-secondary"
+                id="cancelBudgetSelection"
+            >
+                CANCEL
+            </button>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     BLOCK 3
+     PERMANENT REQUEST WORKSPACE
+========================================== -->
+
+<section
+    class="app-screen hidden"
+    id="requestWorkspaceScreen"
+>
+
+    <!-- =====================================
+         REQUEST HEADER
+    ====================================== -->
+
+    <div class="request-workspace-header">
+
+        <h1 class="request-workspace-title">
+            New Request: Supplemental Budget Request
+        </h1>
+
+
+        <div class="selected-budget-row">
+
+            <span class="selected-budget-label">
+                Budget:
+            </span>
+
+
+            <span
+                class="selected-budget-name"
+                id="selectedBudgetName"
+            >
+                Program/Event Supplemental Funding
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================
+         REQUEST TABS
+    ====================================== -->
+
+    <div class="request-tabs">
+
+        <button
+            type="button"
+            class="request-tab active"
+            id="requestTab"
+        >
+            REQUEST
+        </button>
+
+
+        <button
+            type="button"
+            class="request-tab"
+            id="additionalInformationTab"
+            disabled
+        >
+            ADDITIONAL INFORMATION
+        </button>
+
+
+        <button
+            type="button"
+            class="request-tab"
+            id="budgetTab"
+            disabled
+        >
+            BUDGET
+        </button>
+
+    </div>
+
+
+
+    <!-- =====================================
+         PERMANENT REQUEST CONTENT AREA
+    ====================================== -->
+
+    <div class="request-content-shell">
+
+        <div
+            class="request-page-content"
+            id="requestPageContent"
+        >
+
+            <!--
+                Future request pages will be placed
+                inside this permanent content area.
+
+                Block 4 begins with the REQUEST page.
+            -->
+
+            <!-- =========================================
+     BLOCK 4
+     REQUEST PAGE
+========================================== -->
+
+<section
+    class="request-page"
+    id="requestBasicPage"
+>
+
+    <form
+        id="requestBasicForm"
+        novalidate
+    >
+
+        <!-- REQUEST TITLE -->
+
+        <div class="form-group">
+
+            <label
+                class="form-label"
+                for="requestTitle"
+            >
+
+                <span class="required">*</span>
+
+                Request Title
+
+                <span class="field-note">
+                    (Required Field)
+                </span>
+
+            </label>
+
+
+            <input
+                type="text"
+                class="text-input"
+                id="requestTitle"
+                name="requestTitle"
+                required
+            >
+
+
+            <p
+                class="field-error hidden"
+                id="requestTitleError"
+            >
+                Request Title is required.
+            </p>
+
+        </div>
+
+
+
+        <!-- DESCRIPTION -->
+
+        <div class="form-group">
+
+            <label
+                class="form-label"
+                for="requestDescription"
+            >
+                Description
+            </label>
+
+
+            <textarea
+                class="text-area"
+                id="requestDescription"
+                name="requestDescription"
+                rows="6"
+            ></textarea>
+
+        </div>
+
+    </form>
+
+</section>
+
+
+
+<!-- =========================================
+     BLOCK 5 PLACEHOLDER
+
+     This will be replaced only when
+     Block 5 begins.
+========================================== -->
+
+<!-- =========================================
+     BLOCK 5
+     POLICY / ACKNOWLEDGEMENTS
+========================================== -->
+
+<section
+    class="request-page hidden"
+    id="policyAcknowledgementPage"
+>
+
+    <form
+        id="policyAcknowledgementForm"
+        novalidate
+    >
+
+        <div class="policy-page-heading">
+
+            <h2>
+                Terms and Conditions
+            </h2>
+
+        </div>
+
+
+        <!-- =====================================
+             TERMS AND CONDITIONS
+        ====================================== -->
+
+        <div class="policy-section">
+
+            <p>
+                <strong>ELIGIBILITY:</strong>
+                RSOs must be registered and currently active with
+                Student Activities to request funding. The right
+                to petition for funding does not guarantee allocation.
+                RSOs may only request funding from SABAC for
+                qualifiable purchases as outlined in the RSO Policy
+                in the RSO Manual.
+            </p>
+
+
+            <p>
+                <strong>DEADLINES:</strong>
+                SABAC will consider at each of its regularly-scheduled
+                meetings all Supplemental Funding Requests that were
+                <strong>
+                    submitted at least one month prior to the meeting
+                    by noon
+                </strong>
+                and will provide an advisory opinion to the VPSA in
+                sufficient time for the VPSA to issue Supplemental
+                Funding Decisions within two weeks after the respective
+                SABAC meeting.
+            </p>
+
+
+            <p>
+                <strong>PRESENTATION:</strong>
+                After submitting a funding request by the established
+                deadline, RSO members are highly encouraged to attend
+                the scheduled SABAC meeting to provide a presentation
+                on the request. If no group members are available to
+                attend the meeting, the SABAC Chair and Secretary must
+                be notified in advance. SABAC may still review the
+                request on the merits of the submission documents and
+                make a decision, allow alternative methods of
+                presentation, or table the request and forward to a
+                future meeting and request the presence of a
+                representative of the group. Advisors are welcome to
+                attend SABAC meetings but may not make presentations
+                on behalf of the group. Advisors may be consulted by
+                the presenting student leaders during the question and
+                answer period of the presentation.
+            </p>
+
+
+            <p>
+                <strong>FUNDING PROCESS:</strong>
+                SABAC is an advisory body. No funding decisions are
+                final until approved by the Vice President of Student
+                Affairs (VPSA). RSOs will be informed of Supplemental
+                Funding Decisions within two weeks after the respective
+                SABAC meeting. Expenditures of funding allocations must
+                follow the budget as approved by the VPSA. Funds may
+                not be spent by the organization on items not included
+                in the approved funding request.
+            </p>
+
+
+            <p>
+                Original receipts, purchase orders and all official
+                documentation of expenditures must be submitted to the
+                designated staff member for payment within one week of
+                completion of the event or travel.
+            </p>
+
+        </div>
+
+
+        <!-- ACKNOWLEDGEMENT 1 -->
+
+        <div class="policy-acknowledgement">
+
+            <label for="policyTermsName">
+
+                To acknowledge that you have read the section above,
+                please type your name in the box provided
+
+            </label>
+
+
+            <input
+                type="text"
+                class="policy-name-input"
+                id="policyTermsName"
+                required
+            >
+
+
+            <p
+                class="field-error hidden"
+                id="policyTermsNameError"
+            >
+                Please type your name to acknowledge this section.
+            </p>
+
+        </div>
+
+
+
+        <!-- =====================================
+             NON-FUNDABLE ITEMS
+        ====================================== -->
+
+        <div class="policy-section">
+
+            <p class="policy-section-title">
+                SABAC cannot fund the following items:
+            </p>
+
+
+            <ul class="policy-list">
+
+                <li>
+                    Alcohol, tobacco, drugs, or any other related
+                    illegal or restricted items
+                </li>
+
+                <li>
+                    Actual or in-kind contributions to campaigns,
+                    candidates, or political parties
+                </li>
+
+                <li>
+                    Off-campus organizations or agencies and their
+                    related activities and membership fees for civic
+                    organizations
+                </li>
+
+                <li>
+                    Fundraisers, donations, or gratuities
+                    (certain programmatic expenses are excluded
+                    provided that no entry fee is required to gain
+                    access to the fundraising event and no SABAC funds
+                    are used to purchase items sold to raise funds)
+                </li>
+
+                <li>
+                    Scholarships or individual membership fees
+                </li>
+
+                <li>
+                    Prizes or promotional items exceeding state
+                    value limits
+                </li>
+
+                <li>
+                    Gifts and other items intended primarily for
+                    personal use
+                </li>
+
+                <li>
+                    Services for individual benefit or of a personal,
+                    individual nature
+                </li>
+
+                <li>
+                    Items of direct benefit to non-students
+                    (including employees)
+                </li>
+
+                <li>
+                    Salaries or instructional costs for faculty,
+                    including payments for advising
+                </li>
+
+                <li>
+                    Employee recognition and meals
+                    (including student employees)
+                </li>
+
+                <li>
+                    Sales tax
+                </li>
+
+                <li>
+                    Events that are not open to all KSU students
+                </li>
+
+                <li>
+                    Expenditures that violate applicable law,
+                    Board of Regents' policy, and KSU policies
+                    and procedures
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- ACKNOWLEDGEMENT 2 -->
+
+        <div class="policy-acknowledgement">
+
+            <label for="policyRestrictedItemsName">
+
+                To acknowledge that you have read the section above,
+                please type your name in the box provided
+
+            </label>
+
+
+            <input
+                type="text"
+                class="policy-name-input"
+                id="policyRestrictedItemsName"
+                required
+            >
+
+
+            <p
+                class="field-error hidden"
+                id="policyRestrictedItemsNameError"
+            >
+                Please type your name to acknowledge this section.
+            </p>
+
+        </div>
+
+
+
+        <!-- =====================================
+             WRITTEN DECISION
+        ====================================== -->
+
+        <div class="policy-section">
+
+            <p class="policy-section-title">
+                Requesting Written Decisions on RSOs' Approved Budgets:
+            </p>
+
+
+            <p>
+                After the budgeting process is complete, if any RSO's
+                approved budget is less than the total amount sought in
+                its requested budget, the RSO can request a written
+                decision setting forth the basis for the Vice President
+                for Student Affairs's (VPSA's) decision to award the RSO
+                the reduced amount within ten business days after the RSO
+                receives its approved budget.
+            </p>
+
+
+            <p>
+                Within 20 business days of receiving such a request,
+                the VPSA will provide the RSO with a written decision
+                detailing the reasons that its approved budget was less
+                than the total amount requested.
+            </p>
+
+
+
+            <p class="policy-section-title policy-subheading">
+                Funding Appeal Process:
+            </p>
+
+
+            <p>
+                In the event that an RSO's approved Annual Budget or
+                Supplemental Funding Request is less than the total
+                amount that the RSO requested, the RSO may appeal the
+                VPSA's written decision setting forth the basis for the
+                award of the reduced amount.
+            </p>
+
+
+            <p>
+                An RSO may also appeal the VPSA's determination if the
+                VPSA failed to issue a timely written decision after
+                the RSO properly requested one. All appeals will be
+                heard by the President or his or her designee.
+            </p>
+
+
+            <p>
+                Appeals must be in writing and must be submitted to the
+                President or designee within ten business days after
+                the RSO receives the VPSA's written decision or, if the
+                VPSA failed to issue a timely written decision after the
+                RSO properly requested one, within ten business days
+                after the time for the VPSA to issue the decision has
+                expired.
+            </p>
+
+
+            <p>
+                An RSO's appeal must be based on one of the following
+                grounds:
+            </p>
+
+
+            <ul class="policy-list">
+
+                <li>
+                    SABAC's recommended disapproval of the Annual Budget
+                    Request, Supplemental Funding Request, or its
+                    determination of any allocation for an item therein
+                    was arbitrary or capricious and such recommendation
+                    was not remedied by the VPSA's actions
+                </li>
+
+                <li>
+                    The VPSA's disapproval of the Annual Budget Request,
+                    Supplemental Funding Request, or his or her
+                    determination of any allocation for an item therein
+                    was arbitrary or capricious
+                </li>
+
+                <li>
+                    SABAC engaged in viewpoint discrimination or another
+                    legal violation, which was not remedied by the VPSA's
+                    actions
+                </li>
+
+                <li>
+                    The VPSA engaged in viewpoint discrimination or
+                    another legal violation
+                </li>
+
+                <li>
+                    The VPSA or SABAC failed to follow the Funding
+                    Request Processes and Procedures outlined above
+                </li>
+
+            </ul>
+
+
+            <p>
+                Within 20 business days of submitting the appeal, the
+                President or his or her designee will provide the RSO
+                with a written decision granting or denying the appeal
+                and detailing the reasons for the determination.
+                If the President or his or her designee grants the
+                appeal and approves a new final budget, the new budget
+                will be included in the written decision.
+            </p>
+
+        </div>
+
+
+        <!-- ACKNOWLEDGEMENT 3 -->
+
+        <div class="policy-acknowledgement">
+
+            <label for="policyAppealName">
+
+                To acknowledge that you have read the section above,
+                please type your name in the box provided
+
+            </label>
+
+
+            <input
+                type="text"
+                class="policy-name-input"
+                id="policyAppealName"
+                required
+            >
+
+
+            <p
+                class="field-error hidden"
+                id="policyAppealNameError"
+            >
+                Please type your name to acknowledge this section.
+            </p>
+
+        </div>
+
+
+
+        <!-- =====================================
+             OWL LIFE ATTENDANCE
+        ====================================== -->
+
+        <div class="policy-section">
+
+            <p>
+                All RSOs who receive funding for campus programs are
+                <strong>
+                    required to use the Owl Life event feature to track
+                    event attendance at SABAC-funded events.
+                </strong>
+
+                This is the only attendance data that will be used for
+                reporting data at the close of the fiscal year.
+                Assistance with the event feature in Owl Life,
+                including checking out tap card readers for use at an
+                event, can be found at studentactivities.kennesaw.edu
+                or by emailing studentactivities@kennesaw.edu.
+            </p>
+
+        </div>
+
+
+        <!-- ACKNOWLEDGEMENT 4 -->
+
+        <div class="policy-acknowledgement">
+
+            <label for="policyAttendanceName">
+
+                To acknowledge that you have read the section above,
+                please type your name in the box provided
+
+            </label>
+
+
+            <input
+                type="text"
+                class="policy-name-input"
+                id="policyAttendanceName"
+                required
+            >
+
+
+            <p
+                class="field-error hidden"
+                id="policyAttendanceNameError"
+            >
+                Please type your name to acknowledge this section.
+            </p>
+
+        </div>
+
+    </form>
+
+</section>
+
+
+
+<!-- =========================================
+     BLOCK 6 PLACEHOLDER
+========================================== -->
+
+<!-- =========================================
+     BLOCK 6
+     ORGANIZATION INFORMATION
+========================================== -->
+
+<section
+    class="request-page hidden"
+    id="organizationInformationPage"
+>
+
+    <form
+        id="organizationInformationForm"
+        novalidate
+    >
+
+        <!-- =====================================
+             PAGE HEADING
+        ====================================== -->
+
+        <div class="organization-page-heading">
+
+            <h2>
+                Organization Information
+            </h2>
+
+
+            <div class="organization-request-reference">
+
+                <span>
+                    Request Title:
+                </span>
+
+                <strong id="organizationRequestTitle">
+                    -
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================
+             PRESIDENT
+        ====================================== -->
+
+        <div class="organization-subsection">
+
+            <h3>
+                President's Contact Information
+            </h3>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label
+                class="form-label"
+                for="presidentName"
+            >
+
+                <span class="required">*</span>
+                Name
+
+            </label>
+
+
+            <input
+                type="text"
+                class="text-input"
+                id="presidentName"
+                required
+            >
+
+
+            <p
+                class="field-error hidden"
+                id="presidentNameError"
+            >
+                President name is required.
+            </p>
+
+        </div>
+
+
+
+        <div class="form-group">
+
+            <label
+                class="form-label"
+                for="presidentEmail"
+            >
+
+                <span class="required">*</span>
+                KSU Email
+
+            </label>
+
+
+            <input
+                type="email"
+                class="text-input"
+                id="presidentEmail"
+                placeholder="example@students.kennesaw.edu"
+                required
+            >
+
+
+            <p
+                class="field-error hidden"
+                id="presidentEmailError"
+            >
+                A valid president KSU email is required.
+            </p>
+
+        </div>
+
+
+
+        <div class="form-group">
+
+            <label
+                class="form-label"
+                for="presidentPhone"
+            >
+
+                <span class="required">*</span>
+                Phone Number
+
+            </label>
+
+
+            <input
+                type="tel"
+                class="text-input"
+                id="presidentPhone"
+                required
+            >
+
+
+            <p
+                class="field-error hidden"
+                id="presidentPhoneError"
+            >
+                President phone number is required.
+            </p>
+
+        </div>
+
+
+
+        <!-- =====================================
+             TREASURER
+        ====================================== -->
+
+        <div class="organization-subsection">
+
+            <h3>
+                Treasurer's Contact Information
+            </h3>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label
+                class="form-label"
+                for="treasurerName"
+            >
+
+                <span class="required">*</span>
+                Name
+
+            </label>
+
+
+            <input
+                type="text"
+                class="text-input"
+                id="treasurerName"
+                required
+            >
+
+
+            <p
+                class="field-error hidden"
+                id="treasurerNameError"
+            >
+                Treasurer name is required.
+            </p>
+
+        </div>
+
+
+
+        <div class="form-group">
+
+            <label
+                class="form-label"
+                for="treasurerEmail"
+            >
+
+                <span class="required">*</span>
+                KSU Email
+
+            </label>
+
+
+            <input
+                type="email"
+                class="text-input"
+                id="treasurerEmail"
+                placeholder="example@students.kennesaw.edu"
+                required
+            >
+
+
+            <p
+                class="field-error hidden"
+                id="treasurerEmailError"
+            >
+                A valid treasurer KSU email is required.
+            </p>
+
+        </div>
+
+
+
+        <div class="form-group">
+
+            <label
+                class="form-label"
+                for="treasurerPhone"
+            >
+
+                <span class="required">*</span>
+                Phone Number
+
+            </label>
+
+
+            <input
+                type="tel"
+                class="text-input"
+                id="treasurerPhone"
+                required
+            >
+
+
+            <p
+                class="field-error hidden"
+                id="treasurerPhoneError"
+            >
+                Treasurer phone number is required.
+            </p>
+
+        </div>
+
+
+
+        <!-- =====================================
+             ADVISOR
+        ====================================== -->
+
+        <div class="organization-subsection">
+
+            <h3>
+                Advisor's Contact Information
+            </h3>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label
+                class="form-label"
+                for="advisorName"
+            >
+
+                <span class="required">*</span>
+                Name
+
+            </label>
+
+
+            <input
+                type="text"
+                class="text-input"
+                id="advisorName"
+                required
+            >
+
+
+            <p
+                class="field-error hidden"
+                id="advisorNameError"
+            >
+                Advisor name is required.
+            </p>
+
+        </div>
+
+
+
+        <div class="form-group">
+
+            <label
+                class="form-label"
+                for="advisorEmail"
+            >
+
+                <span class="required">*</span>
+                KSU Email
+
+            </label>
+
+
+            <input
+                type="email"
+                class="text-input"
+                id="advisorEmail"
+                placeholder="example@kennesaw.edu"
+                required
+            >
+
+
+            <p
+                class="field-error hidden"
+                id="advisorEmailError"
+            >
+                A valid advisor KSU email is required.
+            </p>
+
+        </div>
+
+
+
+        <div class="form-group">
+
+            <label
+                class="form-label"
+                for="advisorPhone"
+            >
+
+                <span class="required">*</span>
+                Phone Number
+
+            </label>
+
+
+            <input
+                type="tel"
+                class="text-input"
+                id="advisorPhone"
+                required
+            >
+
+
+            <p
+                class="field-error hidden"
+                id="advisorPhoneError"
+            >
+                Advisor phone number is required.
+            </p>
+
+        </div>
+
+
+
+        <!-- =====================================
+             ADDITIONAL CONTACTS
+        ====================================== -->
+
+        <div class="organization-subsection">
+
+            <h3>
+                Additional Communication
+            </h3>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label
+                class="form-label organization-question-label"
+                for="additionalContacts"
+            >
+                Please list any additional individuals who should
+                receive communication regarding this request.
+            </label>
+
+
+            <textarea
+                class="text-area"
+                id="additionalContacts"
+                rows="4"
+            ></textarea>
+
+        </div>
+
+
+
+        <!-- =====================================
+             SABAC PRESENTATION
+        ====================================== -->
+
+        <div class="organization-subsection">
+
+            <h3>
+                SABAC Meeting
+            </h3>
+
+        </div>
+
+
+        <fieldset class="organization-question-group">
+
+            <legend>
+
+                Does a member or members of your organization intend
+                to attend and provide a presentation of your
+                supplemental funding request during the SABAC meeting
+                in which your request is to be reviewed?
+
+                <span class="required">*</span>
+
+            </legend>
+
+
+            <div class="vertical-radio-group">
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="sabacPresentation"
+                        value="yes"
+                    >
+
+                    Yes
+
+                </label>
+
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="sabacPresentation"
+                        value="no"
+                    >
+
+                    No
+
+                </label>
+
+            </div>
+
+
+            <p
+                class="field-error hidden"
+                id="sabacPresentationError"
+            >
+                Please select Yes or No.
+            </p>
+
+        </fieldset>
+
+
+
+        <!-- =====================================
+             PREVIOUS SABAC FUNDING
+        ====================================== -->
+
+        <div class="organization-subsection">
+
+            <h3>
+                Previous SABAC Funding
+            </h3>
+
+        </div>
+
+
+        <fieldset class="organization-question-group">
+
+            <legend>
+
+                Has your organization received SABAC funds in either
+                the prior or current academic year for any travel,
+                programs, activities, or events?
+
+                <span class="required">*</span>
+
+            </legend>
+
+
+            <div class="vertical-radio-group">
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="receivedPreviousSabacFunding"
+                        value="yes"
+                    >
+
+                    Yes
+
+                </label>
+
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="receivedPreviousSabacFunding"
+                        value="no"
+                    >
+
+                    No
+
+                </label>
+
+            </div>
+
+
+            <p
+                class="field-error hidden"
+                id="previousSabacFundingError"
+            >
+                Please select Yes or No.
+            </p>
+
+        </fieldset>
+
+
+
+        <!-- =====================================
+             NATURE OF REQUEST
+        ====================================== -->
+
+        <div class="organization-subsection">
+
+            <h3>
+                Nature of Request
+            </h3>
+
+        </div>
+
+
+        <fieldset class="organization-question-group">
+
+            <legend>
+
+                Please indicate the nature of your RSO's request.
+
+                <span class="required">*</span>
+
+            </legend>
+
+
+            <div class="vertical-radio-group">
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="requestNature"
+                        value="program"
+                        checked
+                    >
+
+                    Program/Event Funding
+
+                </label>
+
+            </div>
+
+        </fieldset>
+
+    </form>
+
+</section>
+
+
+
+<!-- =========================================
+     BLOCK 7
+     PREVIOUS SABAC FUNDING
+========================================== -->
+
+<section
+    class="request-page hidden"
+    id="previousSabacFundingPage"
+>
+
+    <form
+        id="previousSabacFundingForm"
+        novalidate
+    >
+
+        <!-- PAGE HEADING -->
+
+        <div class="organization-page-heading">
+
+            <h2>
+                Previous SABAC Funding
+            </h2>
+
+        </div>
+
+
+        <!-- PREVIOUS FUNDING STATEMENT -->
+
+        <div class="form-group">
+
+            <label
+                class="form-label"
+                for="previousSabacStatement"
+            >
+
+                <span class="required">*</span>
+
+                Please provide a written statement below demonstrating
+                that your organization effectively utilized the funds
+                that were allocated to it to accomplish the goals for
+                which those funds were awarded.
+
+            </label>
+
+
+            <textarea
+                class="text-area"
+                id="previousSabacStatement"
+                rows="10"
+                required
+            ></textarea>
+
+
+            <p
+                class="field-error hidden"
+                id="previousSabacStatementError"
+            >
+                Please provide a statement about your previous SABAC funding.
+            </p>
+
+        </div>
+
+    </form>
+
+</section>
+
+
+
+<!-- =========================================
+     BLOCK 8
+     PROGRAM FUNDING INFORMATION
+========================================== -->
+
+<section
+    class="request-page hidden"
+    id="programFundingPage"
+>
+
+    <form
+        id="programFundingForm"
+        novalidate
+    >
+
+        <!-- PAGE HEADING -->
+
+        <div class="program-funding-heading">
+
+            <h2>
+                Program Funding Information
+            </h2>
+
+        </div>
+
+
+
+        <!-- PROGRAM NAME -->
+
+        <div class="form-group">
+
+            <label
+                class="form-label"
+                for="programName"
+            >
+
+                <span class="required">*</span>
+
+                Program Name
+
+            </label>
+
+
+            <input
+                type="text"
+                class="text-input"
+                id="programName"
+                required
+            >
+
+
+            <p
+                class="field-error hidden"
+                id="programNameError"
+            >
+                Program Name is required.
+            </p>
+
+        </div>
+
+
+
+        <!-- LOCATION -->
+
+        <div class="form-group">
+
+            <label
+                class="form-label"
+                for="programLocation"
+            >
+
+                <span class="required">*</span>
+
+                Proposed location(s) of program
+
+            </label>
+
+
+            <textarea
+                class="text-area program-short-textarea"
+                id="programLocation"
+                rows="4"
+                required
+            ></textarea>
+
+
+            <p
+                class="field-error hidden"
+                id="programLocationError"
+            >
+                Proposed program location is required.
+            </p>
+
+        </div>
+
+
+
+        <!-- DATE -->
+
+        <div class="form-group">
+
+            <label
+                class="form-label"
+                for="programDate"
+            >
+
+                <span class="required">*</span>
+
+                Proposed date(s) of program
+
+            </label>
+
+
+            <textarea
+                class="text-area program-date-textarea"
+                id="programDate"
+                rows="3"
+                required
+            ></textarea>
+
+
+            <p
+                class="field-error hidden"
+                id="programDateError"
+            >
+                Proposed program date is required.
+            </p>
+
+        </div>
+
+
+
+        <!-- DESCRIPTION -->
+
+        <div class="form-group">
+
+            <label
+                class="form-label program-description-label"
+                for="programDescription"
+            >
+
+                <span class="required">*</span>
+
+                Detailed written description of the specific programs,
+                activities, or events the RSO intends to sponsor.
+
+            </label>
+
+
+            <textarea
+                class="text-area program-description-textarea"
+                id="programDescription"
+                rows="10"
+                required
+            ></textarea>
+
+
+            <p
+                class="field-error hidden"
+                id="programDescriptionError"
+            >
+                A detailed program description is required.
+            </p>
+
+        </div>
+
+
+
+        <!-- STUDENT PARTICIPANTS -->
+
+        <div class="form-group">
+
+            <label
+                class="form-label"
+                for="studentParticipants"
+            >
+
+                <span class="required">*</span>
+
+                Anticipated Number of Student Participants
+
+            </label>
+
+
+            <input
+                type="number"
+                class="text-input participant-input"
+                id="studentParticipants"
+                min="0"
+                step="1"
+                required
+            >
+
+
+            <p
+                class="field-error hidden"
+                id="studentParticipantsError"
+            >
+                Enter the anticipated number of student participants.
+            </p>
+
+        </div>
+
+
+
+        <!-- STAFF / FACULTY -->
+
+        <div class="form-group">
+
+            <label
+                class="form-label"
+                for="staffParticipants"
+            >
+
+                <span class="required">*</span>
+
+                Anticipated Number of Staff/Faculty Participants
+
+            </label>
+
+
+            <input
+                type="number"
+                class="text-input participant-input"
+                id="staffParticipants"
+                min="0"
+                step="1"
+                required
+            >
+
+
+            <p
+                class="field-error hidden"
+                id="staffParticipantsError"
+            >
+                Enter the anticipated number of staff/faculty participants.
+            </p>
+
+        </div>
+
+
+
+        <!-- OFF CAMPUS -->
+
+        <div class="form-group">
+
+            <label
+                class="form-label"
+                for="offCampusParticipants"
+            >
+
+                <span class="required">*</span>
+
+                Anticipated Number of Off Campus Participants
+
+            </label>
+
+
+            <input
+                type="number"
+                class="text-input participant-input"
+                id="offCampusParticipants"
+                min="0"
+                step="1"
+                required
+            >
+
+
+            <p
+                class="field-error hidden"
+                id="offCampusParticipantsError"
+            >
+                Enter the anticipated number of off campus participants.
+            </p>
+
+        </div>
+
+    </form>
+
+</section>
+
+<!-- =========================================
+     BLOCK 9
+     BUDGET SCREEN
+========================================== -->
+
+<section
+    class="request-page hidden"
+    id="budgetPage"
+>
+
+    <!-- =====================================
+         PAGE HEADING
+    ====================================== -->
+
+    <div class="budget-page-heading">
+
+        <h2>
+            Estimated Expenses
+        </h2>
+
+        <p>
+            Add each expense that your organization is requesting
+            funding for. Enter one budget item at a time.
+        </p>
+
+    </div>
+
+
+    <!-- =====================================
+         BUDGET SUMMARY
+    ====================================== -->
+
+    <div class="budget-summary-bar">
+
+        <div class="budget-summary-label">
+
+            <span>
+                Total Amount Requested
+            </span>
+
+        </div>
+
+
+        <div
+            class="budget-requested-total"
+            id="requestedTotal"
+        >
+            $0.00
+        </div>
+
+    </div>
+
+
+    <!-- =====================================
+         BUDGET ITEMS SECTION
+    ====================================== -->
+
+    <div class="budget-items-section">
+
+
+        <!-- SECTION HEADER -->
+
+        <div class="budget-items-header">
+
+            <div>
+
+                <h3>
+                    Budget Items
+                </h3>
+
+                <p>
+                    Add each individual expense associated with
+                    this funding request.
+                </p>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="owl-button owl-button-primary"
+                id="openBudgetModal"
+            >
+                ADD EXPENSE
+            </button>
+
+        </div>
+
+
+        <!-- =====================================
+             BUDGET ITEM LIST
+        ====================================== -->
+
+        <div
+            class="budget-item-list"
+            id="budgetItemList"
+        >
+
+            <div
+                class="budget-empty-state"
+                id="emptyBudgetMessage"
+            >
+
+                <p>
+                    No expenses have been added.
+                </p>
+
+                <span>
+                    Select ADD EXPENSE to enter your first budget item.
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================
+             ITEM COUNT
+        ====================================== -->
+
+        <div class="budget-items-footer">
+
+            <span>
+                Budget Items:
+            </span>
+
+            <strong id="budgetItemCount">
+                0
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================
+         BUDGET VALIDATION MESSAGE
+    ====================================== -->
+
+    <p
+        class="field-error hidden"
+        id="budgetItemsError"
+    >
+        Please add at least one budget item before continuing.
+    </p>
+
+</section>
+
+<!-- =========================================
+     BLOCK 10
+     BUDGET ITEM MODAL
+========================================== -->
+
+<div
+    class="budget-modal-overlay hidden"
+    id="budgetModalOverlay"
+>
+
+    <div
+        class="budget-item-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="budgetModalTitle"
+    >
+
+        <!-- =====================================
+             MODAL HEADER
+        ====================================== -->
+
+        <div class="budget-modal-header">
+
+            <h2 id="budgetModalTitle">
+                Add Line Item
+            </h2>
+
+
+            <button
+                type="button"
+                class="budget-modal-close"
+                id="closeBudgetModal"
+                aria-label="Close line item modal"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- =====================================
+             MODAL BODY
+        ====================================== -->
+
+        <div class="budget-modal-body">
+
+            <form
+                id="budgetItemForm"
+                novalidate
+            >
+
+                <!-- =====================================
+                     LINE ITEM CATEGORY
+                ====================================== -->
+
+                <div class="form-group">
+
+                    <label
+                        class="form-label"
+                        for="budgetItemCategory"
+                    >
+
+                        <span class="required">*</span>
+
+                        Line Item Category
+
+                    </label>
+
+
+                    <select
+    class="select-input"
+    id="budgetItemCategory"
+    required
+>
+
+    <option value="">
+        Select Category
+    </option>
+
+    <option value="Supplies and Materials (714100) (Expense)">
+        Supplies and Materials (714100) (Expense)
+    </option>
+
+    <option value="Office Supplies (714101) (Expense)">
+        Office Supplies (714101) (Expense)
+    </option>
+
+    <option value="Postage, Shipping & Handling (714110/714111) (Expense)">
+        Postage, Shipping & Handling (714110/714111) (Expense)
+    </option>
+
+    <option value="Licenses (714112) (Expense)">
+        Licenses (714112) (Expense)
+    </option>
+
+    <option value="Books/eBooks (714113) (Expense)">
+        Books/eBooks (714113) (Expense)
+    </option>
+
+    <option value="Rentals, No Real Estate (719100) (Expense)">
+        Rentals, No Real Estate (719100) (Expense)
+    </option>
+
+    <option value="Rentals, Residence Halls (719101) (Expense)">
+        Rentals, Residence Halls (719101) (Expense)
+    </option>
+
+    <option value="Operating Expense (727100) (Expense)">
+        Operating Expense (727100) (Expense)
+    </option>
+
+    <option value="Advertising, Other (727200) (Expense)">
+        Advertising, Other (727200) (Expense)
+    </option>
+
+    <option value="Advertising, Promotional items (727275) (Expense)">
+        Advertising, Promotional items (727275) (Expense)
+    </option>
+
+    <option value="Food & Meals, Students (727730) (Expense)">
+        Food & Meals, Students (727730) (Expense)
+    </option>
+
+    <option value="Food & Meals, Non-Employees (Expense)">
+        Food & Meals, Non-Employees (Expense)
+    </option>
+
+    <option value="Publications & Printing (742100) (Expense)">
+        Publications & Printing (742100) (Expense)
+    </option>
+
+    <option value="General Equipment Purchase (743100) (Expense)">
+        General Equipment Purchase (743100) (Expense)
+    </option>
+
+    <option value="Furniture (743400) (Expense)">
+        Furniture (743400) (Expense)
+    </option>
+
+    <option value="IT Equipment (744200) (Expense)">
+        IT Equipment (744200) (Expense)
+    </option>
+
+    <option value="Honorariums (751108) (Expense)">
+        Honorariums (751108) (Expense)
+    </option>
+
+    <option value="Contracts, Individuals Providing Services (753100) (Expense)">
+        Contracts, Individuals Providing Services (753100) (Expense)
+    </option>
+
+    <option value="Other (Expense)">
+        Other (Expense)
+    </option>
+
+    <option value="Revenue (Income)">
+        Revenue (Income)
+    </option>
+
+</select>
+
+
+                    <p
+                        class="field-error hidden"
+                        id="budgetItemCategoryError"
+                    >
+                        Please select a line item category.
+                    </p>
+
+                </div>
+
+
+                <!-- =====================================
+                     NAME
+                ====================================== -->
+
+                <div class="form-group">
+
+                    <label
+                        class="form-label"
+                        for="budgetItemName"
+                    >
+
+                        <span class="required">*</span>
+
+                        Name
+
+                    </label>
+
+
+                    <input
+                        type="text"
+                        class="text-input"
+                        id="budgetItemName"
+                        required
+                    >
+
+
+                    <p
+                        class="field-error hidden"
+                        id="budgetItemNameError"
+                    >
+                        Name is required.
+                    </p>
+
+                </div>
+
+
+                <!-- =====================================
+                     DESCRIPTION
+                ====================================== -->
+
+                <div class="form-group">
+
+                    <label
+                        class="form-label"
+                        for="budgetItemDescription"
+                    >
+
+                        <span class="required">*</span>
+
+                        Description
+
+                    </label>
+
+
+                    <textarea
+                        class="text-area budget-item-description"
+                        id="budgetItemDescription"
+                        rows="4"
+                        required
+                    ></textarea>
+
+
+                    <p
+                        class="field-error hidden"
+                        id="budgetItemDescriptionError"
+                    >
+                        Description is required.
+                    </p>
+
+                </div>
+
+
+                <!-- =====================================
+                     QUANTITY × COST = TOTAL
+                ====================================== -->
+
+                <div class="budget-calculation-row">
+
+
+                    <!-- QUANTITY -->
+
+                    <div class="budget-calculation-field">
+
+                        <label
+                            class="form-label"
+                            for="budgetItemQuantity"
+                        >
+
+                            <span class="required">*</span>
+
+                            Quantity
+
+                        </label>
+
+
+                        <input
+                            type="number"
+                            class="text-input"
+                            id="budgetItemQuantity"
+                            min="1"
+                            step="1"
+                            value="1"
+                            required
+                        >
+
+
+                        <p
+                            class="field-error hidden"
+                            id="budgetItemQuantityError"
+                        >
+                            Enter a valid quantity.
+                        </p>
+
+                    </div>
+
+
+                    <!-- MULTIPLY -->
+
+                    <div class="budget-multiply-column">
+
+                        <span class="budget-multiply-symbol">
+                            ×
+                        </span>
+
+                    </div>
+
+
+                    <!-- COST -->
+
+                    <div class="budget-calculation-field">
+
+                        <label
+                            class="form-label"
+                            for="budgetItemPrice"
+                        >
+
+                            <span class="required">*</span>
+
+                            Cost
+
+                        </label>
+
+
+                        <div class="budget-money-input">
+
+                            <span>
+                                $
+                            </span>
+
+
+                            <input
+                                type="number"
+                                id="budgetItemPrice"
+                                min="0"
+                                step="0.01"
+                                required
+                            >
+
+                        </div>
+
+
+                        <p
+                            class="field-error hidden"
+                            id="budgetItemPriceError"
+                        >
+                            Enter a valid cost.
+                        </p>
+
+                    </div>
+
+
+                    <!-- TOTAL -->
+
+                    <div class="budget-total-column">
+
+                        <span class="form-label">
+                            Total
+                        </span>
+
+
+                        <strong id="budgetItemTotal">
+                            $0.00
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =====================================
+                     FILE UPLOAD
+                ====================================== -->
+
+                <div class="form-group budget-file-group">
+
+                    <label
+                        class="form-label"
+                        for="budgetItemFile"
+                    >
+                        Choose File
+                    </label>
+
+
+                    <input
+                        type="file"
+                        class="budget-file-input"
+                        id="budgetItemFile"
+                        accept="image/*,.pdf"
+                    >
+
+
+                    <p
+                        class="budget-file-name hidden"
+                        id="budgetItemFileName"
+                    ></p>
+
+                </div>
+
+            </form>
+
+        </div>
+
+
+        <!-- =====================================
+             MODAL FOOTER
+        ====================================== -->
+
+        <div class="budget-modal-footer">
+
+            <button
+                type="button"
+                class="owl-button owl-button-secondary"
+                id="cancelBudgetItem"
+            >
+                CANCEL
+            </button>
+
+
+            <button
+                type="button"
+                class="owl-button owl-button-primary"
+                id="saveBudgetItem"
+            >
+                ADD ITEM
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+        </div>
+
+
+
+        <!-- =================================
+             PERMANENT FORM NAVIGATION
+        ================================== -->
+
+        <div class="request-form-navigation">
+
+            <button
+                type="button"
+                class="owl-button owl-button-secondary"
+                id="cancelRequestButton"
+            >
+                CANCEL
+            </button>
+
+
+            <div class="request-navigation-right">
+
+                <button
+                    type="button"
+                    class="owl-button owl-button-secondary"
+                    id="previousRequestButton"
+                    disabled
+                >
+                    ‹ PREVIOUS
+                </button>
+
+
+                <button
+                    type="button"
+                    class="owl-button owl-button-primary"
+                    id="nextRequestButton"
+                >
+                    NEXT ›
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+                        <!-- =====================================
+                             BLOCK 1 PLACEHOLDER
+
+                             This is intentionally temporary.
+                             Block 2 will replace ONLY this
+                             placeholder with the Budget Requests
+                             dashboard and budget-selection screens.
+                        ====================================== -->
+                        
+
+                        
+
+
+                    </div>
+
+
+                </div>
+
+            </main>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =========================================
+         MOBILE SIDEBAR OVERLAY
+    ========================================== -->
+
+    <div
+        class="sidebar-overlay hidden"
+        id="sidebarOverlay"
+    ></div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://unpkg.com/jspdf/dist/jspdf.umd.min.js"></script>
+<script src="https://unpkg.com/jspdf-autotable/dist/jspdf.plugin.autotable.min.js"></script>
+<script src="js/supabase.js"></script>
+<script src="js/pdf.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

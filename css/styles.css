@@ -1,0 +1,3147 @@
+/* =========================================================
+   1. RESET / BASE
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    min-height: 100%;
+}
+
+
+body {
+    min-height: 100vh;
+
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background-color: #f4f4f4;
+
+    color: #3f3f3f;
+}
+
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+
+a {
+    color: inherit;
+}
+
+
+
+/* =========================================================
+   2. APP SHELL
+========================================================= */
+
+.app-shell {
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+
+/* =========================================================
+   3. TOP HEADER
+========================================================= */
+
+.top-header {
+    height: 68px;
+
+    background-color: #202020;
+
+    border-bottom: 4px solid #ffc629;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 22px;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+}
+
+
+.top-header-left {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.top-header-right {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+
+/* =========================================================
+   4. BRAND AREA
+========================================================= */
+
+.brand-area {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.brand-mark {
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #ffc629;
+
+    color: #111;
+
+    font-weight: 800;
+
+    font-size: 14px;
+
+    border-radius: 2px;
+}
+
+
+.brand-text {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+
+.brand-title {
+    font-size: 18px;
+
+    font-weight: 600;
+}
+
+
+.brand-subtitle {
+    color: #cfcfcf;
+
+    font-size: 12px;
+}
+
+
+.training-badge {
+    border: 1px solid #666;
+
+    border-radius: 3px;
+
+    padding: 7px 10px;
+
+    color: #e5e5e5;
+
+    font-size: 11px;
+
+    letter-spacing: 0.5px;
+}
+
+
+
+/* =========================================================
+   5. MOBILE MENU BUTTON
+========================================================= */
+
+.mobile-menu-button {
+    display: none;
+
+    width: 40px;
+
+    height: 40px;
+
+    padding: 0;
+
+    background: transparent;
+
+    border: 1px solid #555;
+
+    color: white;
+
+    font-size: 22px;
+
+    border-radius: 3px;
+}
+
+
+
+/* =========================================================
+   6. APPLICATION BODY
+========================================================= */
+
+.app-body {
+    flex: 1;
+
+    display: flex;
+
+    min-height: calc(100vh - 68px);
+}
+
+
+
+/* =========================================================
+   7. SIDEBAR
+========================================================= */
+
+.sidebar {
+    width: 230px;
+
+    flex-shrink: 0;
+
+    background-color: #303030;
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    border-right: 1px solid #222;
+}
+
+
+.sidebar-navigation {
+    padding: 18px 0;
+}
+
+
+.sidebar-link {
+    width: 100%;
+
+    min-height: 48px;
+
+    border: none;
+
+    border-left: 4px solid transparent;
+
+    background-color: transparent;
+
+    color: #d7d7d7;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 0 20px;
+
+    text-align: left;
+
+    transition:
+        background-color 0.15s ease,
+        color 0.15s ease,
+        border-color 0.15s ease;
+}
+
+
+.sidebar-link:hover {
+    background-color: #393939;
+
+    color: white;
+}
+
+
+.sidebar-link.active {
+    background-color: #414141;
+
+    border-left-color: #ffc629;
+
+    color: white;
+}
+
+
+.sidebar-icon {
+    width: 22px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #cccccc;
+
+    font-size: 17px;
+}
+
+
+.sidebar-link.active .sidebar-icon {
+    color: #ffc629;
+}
+
+
+.sidebar-footer {
+    border-top: 1px solid #494949;
+
+    padding: 18px 20px;
+
+    color: #aaa;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+.sidebar-footer p {
+    margin: 0;
+}
+
+
+
+/* =========================================================
+   8. MAIN WORKSPACE
+========================================================= */
+
+.main-workspace {
+    flex: 1;
+
+    min-width: 0;
+
+    background-color: #f1f1f1;
+}
+
+
+.workspace-container {
+    width: min(1120px, calc(100% - 50px));
+
+    margin: 0 auto;
+
+    padding: 32px 0 60px;
+}
+
+
+
+/* =========================================================
+   9. TRAINING NOTICE
+========================================================= */
+
+.training-notice {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    padding: 16px 18px;
+
+    margin-bottom: 24px;
+
+    background-color: #fff8dc;
+
+    border: 1px solid #e8d58d;
+
+    border-left: 5px solid #ffc629;
+
+    color: #454545;
+}
+
+
+.training-notice-icon {
+    width: 26px;
+
+    height: 26px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #ffc629;
+
+    color: #1b1b1b;
+
+    font-weight: bold;
+
+    font-family: Georgia, serif;
+}
+
+
+.training-notice strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 14px;
+}
+
+
+.training-notice p {
+    margin: 0;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+
+/* =========================================================
+   10. SCREEN CONTAINER
+========================================================= */
+
+.screen-container {
+    width: 100%;
+}
+
+
+
+/* =========================================================
+   11. REUSABLE TYPOGRAPHY
+========================================================= */
+
+.page-title {
+    margin: 0 0 25px;
+
+    color: #464646;
+
+    font-size: 30px;
+
+    font-weight: 300;
+
+    line-height: 1.25;
+}
+
+
+.section-title {
+    margin: 0;
+
+    color: #444;
+
+    font-size: 21px;
+
+    font-weight: 400;
+}
+
+
+.eyebrow-text {
+    margin: 0 0 10px;
+
+    color: #777;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 0.8px;
+}
+
+
+.muted-text {
+    color: #777;
+}
+
+
+
+/* =========================================================
+   12. REUSABLE CARDS
+========================================================= */
+
+.content-card {
+    width: 100%;
+
+    background-color: white;
+
+    border: 1px solid #d7d7d7;
+}
+
+
+.content-card-header {
+    padding: 20px 24px;
+
+    border-bottom: 1px solid #dedede;
+}
+
+
+.content-card-body {
+    padding: 25px;
+}
+
+
+
+/* =========================================================
+   13. REUSABLE FORM ELEMENTS
+========================================================= */
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+
+.form-label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #444;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+.required {
+    color: #c22;
+
+    margin-right: 2px;
+}
+
+
+.field-note {
+    color: #777;
+
+    font-size: 12px;
+
+    font-weight: normal;
+}
+
+
+.text-input,
+.text-area,
+.select-input {
+    width: 100%;
+
+    min-height: 40px;
+
+    border: 1px solid #aaa;
+
+    border-radius: 2px;
+
+    background-color: white;
+
+    color: #333;
+
+    padding: 9px 10px;
+
+    font-size: 14px;
+}
+
+
+.text-area {
+    min-height: 120px;
+
+    resize: vertical;
+}
+
+
+.text-input:focus,
+.text-area:focus,
+.select-input:focus {
+    outline: none;
+
+    border-color: #287cc1;
+
+    box-shadow:
+        0 0 0 1px
+        rgba(40, 124, 193, 0.2);
+}
+
+
+
+/* =========================================================
+   14. REUSABLE BUTTONS
+========================================================= */
+
+.owl-button {
+    min-height: 38px;
+
+    padding: 9px 17px;
+
+    border-radius: 2px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.2px;
+
+    text-transform: uppercase;
+}
+
+
+.owl-button-primary {
+    border: 1px solid #236fae;
+
+    background-color: #287cc1;
+
+    color: white;
+}
+
+
+.owl-button-primary:hover {
+    background-color: #226ca8;
+}
+
+
+.owl-button-secondary {
+    border: 1px solid #bbb;
+
+    background-color: white;
+
+    color: #555;
+}
+
+
+.owl-button-secondary:hover {
+    background-color: #f5f5f5;
+}
+
+
+.owl-button:disabled {
+    opacity: 0.45;
+
+    cursor: default;
+}
+
+
+
+/* =========================================================
+   15. REUSABLE PAGE NAVIGATION
+========================================================= */
+
+.form-navigation {
+    min-height: 62px;
+
+    margin-top: 20px;
+
+    padding: 12px 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    background-color: #dddddd;
+}
+
+
+.form-navigation-right {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+
+/* =========================================================
+   16. DEVELOPMENT PLACEHOLDER
+   TEMPORARY - REMOVED IN BLOCK 2
+========================================================= */
+
+.development-placeholder {
+    min-height: 390px;
+
+    padding: 55px;
+
+    background-color: white;
+
+    border: 1px solid #d7d7d7;
+}
+
+
+.development-placeholder h1 {
+    margin: 0 0 15px;
+
+    color: #444;
+
+    font-size: 32px;
+
+    font-weight: 300;
+}
+
+
+.development-placeholder > p {
+    line-height: 1.6;
+}
+
+
+.placeholder-note {
+    max-width: 600px;
+
+    margin-top: 35px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #ddd;
+
+    color: #777;
+}
+
+
+
+/* =========================================================
+   17. UTILITIES
+========================================================= */
+
+.hidden {
+    display: none !important;
+}
+
+
+
+/* =========================================================
+   18. MOBILE SIDEBAR OVERLAY
+========================================================= */
+
+.sidebar-overlay {
+    position: fixed;
+
+    inset: 68px 0 0 0;
+
+    z-index: 89;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* =========================================================
+   19. TABLET / MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .mobile-menu-button {
+        display: block;
+    }
+
+
+    .sidebar {
+        position: fixed;
+
+        top: 68px;
+
+        bottom: 0;
+
+        left: 0;
+
+        z-index: 90;
+
+        transform: translateX(-100%);
+
+        transition: transform 0.2s ease;
+    }
+
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+
+    .workspace-container {
+        width: min(
+            100% - 30px,
+            1120px
+        );
+
+        padding-top: 24px;
+    }
+
+}
+
+
+
+@media (max-width: 650px) {
+
+    .top-header {
+        padding: 0 14px;
+    }
+
+
+    .brand-subtitle {
+        display: none;
+    }
+
+
+    .training-badge {
+        display: none;
+    }
+
+
+    .workspace-container {
+        width: calc(100% - 20px);
+    }
+
+
+    .training-notice {
+        padding: 14px;
+    }
+
+
+    .content-card-header,
+    .content-card-body {
+        padding-left: 18px;
+
+        padding-right: 18px;
+    }
+
+
+    .development-placeholder {
+        padding: 35px 22px;
+    }
+
+    .development-placeholder h1 {font-size: 27px;}
+
+    .form-navigation 
+    {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .form-navigation-right {justify-content: flex-end;}
+
+}
+
+
+
+/* =========================================================
+   20. BLOCK 2
+   BUDGET REQUESTS DASHBOARD
+========================================================= */
+
+.app-screen {
+    width: 100%;
+}
+
+
+
+/* =========================================================
+   DASHBOARD PAGE HEADER
+========================================================= */
+
+.dashboard-page-header {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-bottom: 20px;
+}
+
+
+.dashboard-page-header .page-title {
+    margin-bottom: 0;
+}
+
+
+.dashboard-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.dashboard-actions-label {
+    color: #777;
+
+    font-size: 10px;
+
+    font-weight: 600;
+}
+
+
+.create-request-button {
+    min-height: 32px;
+
+    padding: 7px 11px;
+
+    border: 1px solid #1e6ca9;
+
+    border-radius: 2px;
+
+    background-color: #287cc1;
+
+    color: white;
+
+    font-size: 10px;
+
+    font-weight: 600;
+}
+
+
+.create-request-button:hover {
+    background-color: #226ca8;
+}
+
+
+.button-arrow {
+    margin-left: 5px;
+
+    font-size: 8px;
+}
+
+
+
+/* =========================================================
+   DASHBOARD LAYOUT
+========================================================= */
+
+.budget-dashboard-layout {
+    display: grid;
+
+    grid-template-columns: 210px 1fr;
+
+    align-items: start;
+
+    gap: 0;
+}
+
+
+
+/* =========================================================
+   DASHBOARD FILTER PANEL
+========================================================= */
+
+.budget-filter-panel {
+    min-height: 390px;
+
+    background-color: #f5f5f5;
+
+    border: 1px solid #ddd;
+
+    border-right: none;
+}
+
+
+.budget-filter-tabs {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    border-bottom: 1px solid #ccc;
+}
+
+
+.budget-filter-tab {
+    min-height: 34px;
+
+    border: none;
+
+    border-bottom: 2px solid transparent;
+
+    background-color: #ededed;
+
+    color: #666;
+
+    font-size: 11px;
+}
+
+
+.budget-filter-tab.active {
+    border-bottom-color: #555;
+
+    background-color: #555;
+
+    color: white;
+}
+
+
+.budget-filter-search {
+    padding: 10px;
+}
+
+
+.budget-filter-search input {
+    width: 100%;
+
+    min-height: 30px;
+
+    padding: 6px 8px;
+
+    border: 1px solid #ccc;
+
+    background-color: white;
+
+    font-size: 11px;
+}
+
+
+.budget-filter-search input:focus {
+    outline: none;
+
+    border-color: #287cc1;
+}
+
+
+.budget-filter-options {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.budget-filter-option {
+    min-height: 34px;
+
+    padding: 0 13px;
+
+    border: none;
+
+    border-top: 1px solid #e2e2e2;
+
+    background-color: transparent;
+
+    color: #666;
+
+    text-align: left;
+
+    font-size: 11px;
+}
+
+
+.budget-filter-option:hover {
+    background-color: #eaeaea;
+}
+
+
+.budget-filter-option.active {
+    background-color: white;
+
+    color: #333;
+
+    font-weight: 600;
+}
+
+
+
+/* =========================================================
+   REQUEST LIST PANEL
+========================================================= */
+
+.budget-request-panel {
+    min-height: 390px;
+
+    border: 1px solid #ccc;
+
+    background-color: white;
+}
+
+
+.budget-request-toolbar {
+    min-height: 35px;
+
+    padding: 0 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    background-color: #565656;
+
+    color: white;
+
+    font-size: 10px;
+}
+
+
+.budget-sort-label {
+    color: #e5e5e5;
+}
+
+
+.training-request-empty {
+    padding: 28px 25px;
+
+    border-left: 4px solid #6fa66b;
+
+    color: #555;
+}
+
+
+.training-request-empty strong {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #333;
+
+    font-size: 13px;
+}
+
+
+.training-request-empty p {
+    max-width: 500px;
+
+    margin: 0;
+
+    color: #777;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+
+/* =========================================================
+   21. BLOCK 2
+   CREATE NEW BUDGET REQUEST
+========================================================= */
+
+.budget-selection-card {
+    width: 100%;
+
+    max-width: 850px;
+
+    background-color: white;
+
+    border: 1px solid #d2d2d2;
+}
+
+
+
+/* =========================================================
+   SELECTION HEADER
+========================================================= */
+
+.budget-selection-header {
+    min-height: 55px;
+
+    padding: 14px 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+.budget-selection-header h2 {
+    margin: 0;
+
+    color: #444;
+
+    font-size: 16px;
+
+    font-weight: 400;
+}
+
+
+.selection-search {
+    width: 190px;
+
+    display: flex;
+
+    align-items: center;
+
+    border: 1px solid #ddd;
+
+    background-color: white;
+}
+
+
+.selection-search input {
+    width: 100%;
+
+    min-width: 0;
+
+    height: 28px;
+
+    padding: 5px 8px;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 10px;
+}
+
+
+.selection-search span {
+    padding: 0 7px;
+
+    color: #777;
+
+    font-size: 10px;
+}
+
+
+
+/* =========================================================
+   SELECTION CONTENT
+========================================================= */
+
+.budget-selection-content {
+    padding: 22px 24px 20px;
+}
+
+
+.process-information,
+.budget-option-row {
+    display: grid;
+
+    grid-template-columns: 85px 1fr;
+
+    align-items: start;
+}
+
+
+.process-information {
+    margin-bottom: 18px;
+}
+
+
+.process-label,
+.budget-option-label {
+    padding-top: 2px;
+
+    color: #666;
+
+    font-size: 10px;
+}
+
+
+.process-details strong {
+    color: #333;
+
+    font-size: 12px;
+}
+
+
+.process-details p {
+    max-width: 680px;
+
+    margin: 5px 0 0;
+
+    color: #666;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+}
+
+
+
+/* =========================================================
+   BUDGET OPTIONS
+========================================================= */
+
+.budget-option-row {
+    margin-bottom: 15px;
+}
+
+
+.budget-option-content {
+    min-width: 0;
+}
+
+
+.budget-option-label {
+    width: fit-content;
+
+    padding: 3px 5px;
+
+    background-color: #e3f1df;
+
+    color: #4f6550;
+}
+
+
+.budget-option-link {
+    margin: 0;
+
+    padding: 0;
+
+    border: none;
+
+    background: none;
+
+    color: #146da5;
+
+    text-align: left;
+
+    text-decoration: underline;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+.budget-option-link:hover {
+    color: #0d5787;
+}
+
+
+.budget-option-content p {
+    margin: 4px 0 0;
+
+    color: #666;
+
+    font-size: 10px;
+
+    line-height: 1.45;
+}
+
+
+
+/* Promotional and Travel remain visual only
+   until source material for those workflows exists. */
+
+.budget-option-link.visual-only {
+    cursor: default;
+}
+
+
+.budget-option-link.visual-only:hover {
+    color: #146da5;
+}
+
+
+
+/* =========================================================
+   SELECTION FOOTER
+========================================================= */
+
+.budget-selection-footer {
+    min-height: 48px;
+
+    padding: 8px 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    background-color: #dddddd;
+}
+
+
+
+/* =========================================================
+   BLOCK 2 RESPONSIVE
+========================================================= */
+
+@media (max-width: 750px) {
+
+    .dashboard-page-header {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .dashboard-actions {
+        justify-content: flex-end;
+    }
+
+
+    .budget-dashboard-layout {
+        grid-template-columns: 1fr;
+    }
+
+
+    .budget-filter-panel {
+        min-height: auto;
+
+        border-right: 1px solid #ddd;
+    }
+
+
+    .budget-request-panel {
+        min-height: 300px;
+    }
+
+
+    .budget-selection-header {
+        align-items: stretch;
+
+        flex-direction: column;
+    }
+
+
+    .selection-search {
+        width: 100%;
+    }
+
+
+    .process-information,
+    .budget-option-row {
+        grid-template-columns: 1fr;
+
+        gap: 7px;
+    }
+
+
+    .budget-option-row {
+        padding-bottom: 14px;
+
+        border-bottom: 1px solid #eee;
+    }
+
+}
+
+
+
+/* =========================================================
+   22. BLOCK 3
+   PERMANENT REQUEST WORKSPACE
+========================================================= */
+
+
+/* =========================================================
+   REQUEST WORKSPACE HEADER
+========================================================= */
+
+.request-workspace-header {
+    margin-bottom: 22px;
+}
+
+
+.request-workspace-title {
+    margin: 0 0 28px;
+
+    color: #444;
+
+    font-size: 29px;
+
+    font-weight: 300;
+
+    line-height: 1.25;
+}
+
+
+.selected-budget-row {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: #444;
+
+    font-size: 15px;
+}
+
+
+.selected-budget-label {
+    padding: 3px 7px;
+
+    background-color: #dff1d9;
+
+    color: #4d654f;
+
+    font-size: 10px;
+}
+
+
+.selected-budget-name {
+    font-size: 14px;
+}
+
+
+
+/* =========================================================
+   REQUEST TABS
+========================================================= */
+
+.request-tabs {
+    display: flex;
+
+    align-items: flex-end;
+
+    gap: 0;
+
+    margin-bottom: 0;
+
+    border-bottom: 1px solid #ccc;
+}
+
+
+.request-tab {
+    min-height: 43px;
+
+    padding: 0 17px;
+
+    border: none;
+
+    border-bottom: 3px solid transparent;
+
+    background-color: transparent;
+
+    color: #777;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.2px;
+}
+
+
+.request-tab:hover:not(:disabled) {
+    color: #333;
+}
+
+
+.request-tab.active {
+    border-bottom-color: #287cc1;
+
+    color: #333;
+}
+
+
+.request-tab:disabled {
+    opacity: 0.55;
+
+    cursor: default;
+}
+
+
+
+/* =========================================================
+   REQUEST CONTENT SHELL
+========================================================= */
+
+.request-content-shell {
+    width: 100%;
+
+    max-width: 760px;
+
+    background-color: white;
+}
+
+
+.request-page-content {
+    min-height: 330px;
+
+    padding: 24px;
+
+    border-left: 1px solid #ddd;
+
+    border-right: 1px solid #ddd;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+/* =========================================================
+   TEMPORARY BLOCK 3 PLACEHOLDER
+========================================================= */
+
+.request-placeholder {
+    min-height: 260px;
+
+    padding: 20px 5px;
+}
+
+
+.request-placeholder h2 {
+    margin: 0 0 15px;
+
+    color: #444;
+
+    font-size: 21px;
+
+    font-weight: 400;
+}
+
+
+.request-placeholder p {
+    color: #555;
+
+    line-height: 1.6;
+}
+
+
+.request-placeholder-note {
+    max-width: 520px;
+
+    margin-top: 28px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #ddd;
+
+    color: #777 !important;
+
+    font-size: 13px;
+}
+
+
+
+/* =========================================================
+   PERMANENT REQUEST NAVIGATION
+========================================================= */
+
+.request-form-navigation {
+    min-height: 58px;
+
+    padding: 10px 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    background-color: #ddd;
+}
+
+
+.request-navigation-right {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+
+/* =========================================================
+   BLOCK 3 RESPONSIVE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .request-workspace-title {
+        font-size: 25px;
+    }
+
+
+    .selected-budget-row {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 6px;
+    }
+
+
+    .request-tabs {
+        overflow-x: auto;
+    }
+
+
+    .request-tab {
+        flex-shrink: 0;
+
+        padding-left: 12px;
+
+        padding-right: 12px;
+    }
+
+
+    .request-content-shell {
+        max-width: none;
+    }
+
+
+    .request-page-content {
+        padding: 20px 16px;
+    }
+
+
+    .request-form-navigation {
+        align-items: stretch;
+
+        flex-direction: column;
+    }
+
+
+    .request-navigation-right {
+        justify-content: flex-end;
+    }
+
+}
+
+
+
+/* =========================================================
+   23. BLOCK 4
+   REQUEST PAGE
+========================================================= */
+
+.request-page {
+    width: 100%;
+}
+
+
+
+/* =========================================================
+   REQUEST FORM
+========================================================= */
+
+#requestBasicForm {
+    width: 100%;
+}
+
+
+#requestBasicPage .form-group:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* =========================================================
+   FIELD ERROR
+========================================================= */
+
+.field-error {
+    margin: 6px 0 0;
+
+    color: #b3261e;
+
+    font-size: 11px;
+
+    line-height: 1.4;
+}
+
+
+.text-input.input-error,
+.text-area.input-error,
+.select-input.input-error {
+    border-color: #b3261e;
+}
+
+
+.text-input.input-error:focus,
+.text-area.input-error:focus,
+.select-input.input-error:focus {
+    border-color: #b3261e;
+
+    box-shadow:
+        0 0 0 1px
+        rgba(179, 38, 30, 0.15);
+}
+
+
+
+/* =========================================================
+   NEXT BLOCK PLACEHOLDER
+   TEMPORARY UNTIL BLOCK 5
+========================================================= */
+
+.next-block-placeholder {
+    min-height: 260px;
+
+    padding: 20px 5px;
+}
+
+
+.next-block-placeholder h2 {
+    margin: 0 0 15px;
+
+    color: #444;
+
+    font-size: 21px;
+
+    font-weight: 400;
+}
+
+
+.next-block-placeholder p {
+    color: #555;
+
+    line-height: 1.6;
+}
+
+
+
+/* =========================================================
+   24. BLOCK 5
+   POLICY / ACKNOWLEDGEMENTS
+========================================================= */
+
+.policy-page-heading {
+    margin-bottom: 30px;
+}
+
+
+.policy-page-heading h2 {
+    margin: 0;
+
+    color: #444;
+
+    font-size: 28px;
+
+    font-weight: 300;
+}
+
+
+
+/* =========================================================
+   POLICY SECTIONS
+========================================================= */
+
+.policy-section {
+    padding: 5px 0 20px;
+}
+
+
+.policy-section p {
+    margin: 0 0 22px;
+
+    color: #4c4c4c;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+}
+
+
+.policy-section strong {
+    color: #3e3e3e;
+}
+
+
+.policy-section-title {
+    margin-bottom: 14px !important;
+
+    font-weight: 700;
+}
+
+
+.policy-subheading {
+    margin-top: 30px !important;
+}
+
+
+
+/* =========================================================
+   POLICY LIST
+========================================================= */
+
+.policy-list {
+    margin: 0 0 20px;
+
+    padding-left: 22px;
+
+    color: #4c4c4c;
+
+    font-size: 13px;
+
+    line-height: 1.55;
+}
+
+
+.policy-list li {
+    margin-bottom: 4px;
+}
+
+
+
+/* =========================================================
+   POLICY ACKNOWLEDGEMENT
+========================================================= */
+
+.policy-acknowledgement {
+    margin-bottom: 32px;
+
+    padding:
+        22px
+        18px
+        26px;
+
+    border-top: 1px solid #ddd;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+.policy-acknowledgement label {
+    display: block;
+
+    max-width: 650px;
+
+    margin-bottom: 16px;
+
+    color: #4d4d4d;
+
+    font-size: 13px;
+
+    line-height: 1.55;
+}
+
+
+.policy-name-input {
+    width: 100%;
+
+    max-width: 350px;
+
+    min-height: 34px;
+
+    padding: 7px 9px;
+
+    border: 1px solid #bbb;
+
+    background-color: white;
+
+    color: #333;
+
+    font-size: 13px;
+}
+
+
+.policy-name-input:focus {
+    outline: none;
+
+    border-color: #287cc1;
+
+    box-shadow:
+        0 0 0 1px
+        rgba(40, 124, 193, 0.2);
+}
+
+
+.policy-name-input.input-error {
+    border-color: #b3261e;
+}
+
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .policy-page-heading h2 {
+        font-size: 24px;
+    }
+
+
+    .policy-name-input {
+        max-width: none;
+    }
+
+}
+
+
+
+/* =========================================================
+   25. BLOCK 6
+   ORGANIZATION INFORMATION
+========================================================= */
+
+.organization-page-heading {
+    margin-bottom: 30px;
+}
+
+
+.organization-page-heading h2 {
+    margin: 0 0 18px;
+
+    color: #444;
+
+    font-size: 28px;
+
+    font-weight: 300;
+}
+
+
+
+/* =========================================================
+   REQUEST REFERENCE
+========================================================= */
+
+.organization-request-reference {
+    padding: 11px 13px;
+
+    background-color: #f5f5f5;
+
+    border: 1px solid #ddd;
+
+    color: #555;
+
+    font-size: 12px;
+}
+
+
+.organization-request-reference span {
+    margin-right: 5px;
+
+    color: #777;
+}
+
+
+
+/* =========================================================
+   ORGANIZATION SUBSECTIONS
+========================================================= */
+
+.organization-subsection {
+    margin-top: 34px;
+
+    margin-bottom: 20px;
+
+    padding-bottom: 8px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+.organization-subsection:first-of-type {
+    margin-top: 0;
+}
+
+
+.organization-subsection h3 {
+    margin: 0;
+
+    color: #444;
+
+    font-size: 18px;
+
+    font-weight: 400;
+}
+
+
+
+/* =========================================================
+   QUESTION LABEL
+========================================================= */
+
+.organization-question-label {
+    line-height: 1.6;
+}
+
+
+
+/* =========================================================
+   RADIO QUESTION GROUP
+========================================================= */
+
+.organization-question-group {
+    margin: 0 0 28px;
+
+    padding: 0;
+
+    border: none;
+}
+
+
+.organization-question-group legend {
+    max-width: 680px;
+
+    margin-bottom: 14px;
+
+    padding: 0;
+
+    color: #444;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    line-height: 1.6;
+}
+
+
+
+/* =========================================================
+   VERTICAL RADIO GROUP
+========================================================= */
+
+.vertical-radio-group {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-top: 10px;
+}
+
+
+.vertical-radio-group label {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #444;
+
+    font-size: 13px;
+
+    font-weight: normal;
+
+    cursor: pointer;
+}
+
+
+.vertical-radio-group input[type="radio"] {
+    margin: 0;
+}
+
+
+
+/* =========================================================
+   BLOCK 6 MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .organization-page-heading h2 {
+        font-size: 24px;
+    }
+
+
+    .organization-subsection h3 {
+        font-size: 17px;
+    }
+
+}
+
+/* =========================================================
+   27. BLOCK 8
+   PROGRAM FUNDING INFORMATION
+========================================================= */
+
+.program-funding-heading {
+    margin-bottom: 30px;
+}
+
+
+.program-funding-heading h2 {
+    margin: 0;
+
+    color: #444;
+
+    font-size: 28px;
+
+    font-weight: 300;
+}
+
+
+
+/* =========================================================
+   PROGRAM TEXTAREAS
+========================================================= */
+
+.program-short-textarea {
+    min-height: 95px;
+}
+
+
+.program-date-textarea {
+    min-height: 75px;
+}
+
+
+.program-description-textarea {
+    min-height: 220px;
+}
+
+
+.program-description-label {
+    max-width: 690px;
+
+    line-height: 1.6;
+}
+
+
+
+/* =========================================================
+   PARTICIPANT INPUTS
+========================================================= */
+
+.participant-input {
+    max-width: 220px;
+}
+
+
+
+/* =========================================================
+   BLOCK 8 MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .program-funding-heading h2 {
+        font-size: 24px;
+    }
+
+
+    .participant-input {
+        max-width: none;
+    }
+
+}
+
+/* =========================================================
+   28. BLOCK 9
+   BUDGET SCREEN
+========================================================= */
+
+
+/* =========================================================
+   BUDGET PAGE HEADING
+========================================================= */
+
+.budget-page-heading {
+    margin-bottom: 28px;
+}
+
+
+.budget-page-heading h2 {
+    margin: 0 0 8px;
+
+    color: #444;
+
+    font-size: 28px;
+
+    font-weight: 300;
+}
+
+
+.budget-page-heading p {
+    max-width: 680px;
+
+    margin: 0;
+
+    color: #666;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+
+/* =========================================================
+   BUDGET SUMMARY
+========================================================= */
+
+.budget-summary-bar {
+    min-height: 72px;
+
+    margin-bottom: 25px;
+
+    padding: 16px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    border: 1px solid #cfcfcf;
+
+    background-color: #f5f5f5;
+}
+
+
+.budget-summary-label {
+    color: #555;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.budget-requested-total {
+    color: #333;
+
+    font-size: 25px;
+
+    font-weight: 600;
+}
+
+
+
+/* =========================================================
+   BUDGET ITEMS SECTION
+========================================================= */
+
+.budget-items-section {
+    border: 1px solid #cfcfcf;
+
+    background-color: white;
+}
+
+
+
+/* =========================================================
+   BUDGET ITEMS HEADER
+========================================================= */
+
+.budget-items-header {
+    min-height: 82px;
+
+    padding: 18px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    border-bottom: 1px solid #d7d7d7;
+
+    background-color: #f5f5f5;
+}
+
+
+.budget-items-header h3 {
+    margin: 0 0 5px;
+
+    color: #444;
+
+    font-size: 18px;
+
+    font-weight: 400;
+}
+
+
+.budget-items-header p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+
+/* =========================================================
+   BUDGET ITEM LIST
+========================================================= */
+
+.budget-item-list {
+    min-height: 160px;
+
+    background-color: white;
+}
+
+
+
+/* =========================================================
+   EMPTY BUDGET STATE
+========================================================= */
+
+.budget-empty-state {
+    min-height: 160px;
+
+    padding: 35px 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+.budget-empty-state p {
+    margin: 0 0 6px;
+
+    color: #555;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+.budget-empty-state span {
+    color: #888;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+
+/* =========================================================
+   BUDGET ITEMS FOOTER
+========================================================= */
+
+.budget-items-footer {
+    min-height: 42px;
+
+    padding: 0 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 5px;
+
+    border-top: 1px solid #ddd;
+
+    background-color: #f5f5f5;
+
+    color: #666;
+
+    font-size: 12px;
+}
+
+
+.budget-items-footer strong {
+    color: #333;
+}
+
+
+
+/* =========================================================
+   BUDGET ERROR
+========================================================= */
+
+#budgetItemsError {
+    margin-top: 12px;
+}
+
+
+
+/* =========================================================
+   BLOCK 9 MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .budget-page-heading h2 {
+        font-size: 24px;
+    }
+
+
+    .budget-summary-bar {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+
+    .budget-items-header {
+        align-items: stretch;
+
+        flex-direction: column;
+    }
+
+
+    .budget-items-header .owl-button {
+        align-self: flex-start;
+    }
+
+
+    .budget-requested-total {
+        font-size: 22px;
+    }
+
+}
+
+/* =========================================================
+   29. BLOCK 10
+   BUDGET ITEM MODAL
+========================================================= */
+
+
+/* =========================================================
+   MODAL OVERLAY
+========================================================= */
+
+.budget-modal-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 500;
+
+    padding: 30px 20px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: center;
+
+    overflow-y: auto;
+
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.budget-item-modal {
+    width: min(720px, 100%);
+
+    margin: auto;
+
+    border: 1px solid #aaa;
+
+    background-color: white;
+
+    box-shadow:
+        0 6px 24px
+        rgba(0, 0, 0, 0.25);
+}
+
+
+
+/* =========================================================
+   MODAL HEADER
+========================================================= */
+
+.budget-modal-header {
+    min-height: 62px;
+
+    padding: 16px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    border-bottom: 1px solid #ccc;
+
+    background-color: #f1f1f1;
+}
+
+
+.budget-modal-header h2 {
+    margin: 0;
+
+    color: #444;
+
+    font-size: 22px;
+
+    font-weight: 400;
+}
+
+
+.budget-modal-close {
+    width: 34px;
+
+    height: 34px;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: #666;
+
+    font-size: 28px;
+
+    line-height: 1;
+}
+
+
+.budget-modal-close:hover {
+    color: #222;
+}
+
+
+
+/* =========================================================
+   MODAL BODY
+========================================================= */
+
+.budget-modal-body {
+    padding: 24px;
+}
+
+
+.budget-field-help {
+    margin: -3px 0 9px;
+
+    color: #777;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+.budget-item-description {
+    min-height: 110px;
+}
+
+
+.budget-item-notes {
+    min-height: 90px;
+}
+
+
+
+/* =========================================================
+   QUANTITY × COST = TOTAL
+========================================================= */
+
+.budget-calculation-row {
+    margin-bottom: 26px;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(110px, 1fr)
+        32px
+        minmax(140px, 1fr)
+        minmax(120px, 0.8fr);
+
+    align-items: start;
+
+    gap: 12px;
+}
+
+
+.budget-calculation-field {
+    min-width: 0;
+}
+
+
+.budget-calculation-field .form-label,
+.budget-total-column .form-label {
+    min-height: 18px;
+}
+
+
+.budget-multiply-column {
+    padding-top: 39px;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.budget-multiply-symbol {
+    color: #555;
+
+    font-size: 20px;
+
+    font-weight: 600;
+}
+
+
+
+/* =========================================================
+   MONEY INPUT
+========================================================= */
+
+.budget-money-input {
+    min-height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    border: 1px solid #aaa;
+
+    border-radius: 2px;
+
+    background-color: white;
+}
+
+
+.budget-money-input:focus-within {
+    border-color: #287cc1;
+
+    box-shadow:
+        0 0 0 1px
+        rgba(40, 124, 193, 0.2);
+}
+
+
+.budget-money-input span {
+    padding-left: 10px;
+
+    color: #555;
+
+    font-size: 14px;
+}
+
+
+.budget-money-input input {
+    width: 100%;
+
+    min-width: 0;
+
+    min-height: 38px;
+
+    padding: 9px 10px 9px 4px;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #333;
+
+    font-size: 14px;
+}
+
+
+
+/* =========================================================
+   TOTAL COLUMN
+========================================================= */
+
+.budget-total-column {
+    min-width: 0;
+}
+
+
+.budget-total-column strong {
+    min-height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    color: #333;
+
+    font-size: 20px;
+
+    font-weight: 600;
+}
+
+
+
+/* =========================================================
+   FILE UPLOAD
+========================================================= */
+
+.budget-file-group {
+    margin-top: 6px;
+}
+
+
+.budget-file-input {
+    max-width: 100%;
+
+    color: #555;
+
+    font-size: 13px;
+}
+
+
+.budget-file-name {
+    margin: 8px 0 0;
+
+    color: #666;
+
+    font-size: 12px;
+}
+
+
+
+/* =========================================================
+   CATEGORY SELECT
+========================================================= */
+
+#budgetItemCategory {
+    max-width: 100%;
+}
+
+
+
+/* =========================================================
+   BLOCK 10 MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .budget-calculation-row {
+        grid-template-columns: 1fr;
+    }
+
+
+    .budget-multiply-column {
+        display: none;
+    }
+
+
+    .budget-total-column {
+        margin-top: 4px;
+    }
+
+}
+
+
+.budget-item-total-row strong {
+    color: #333;
+
+    font-size: 21px;
+}
+
+
+
+/* =========================================================
+   MODAL FOOTER
+========================================================= */
+
+.budget-modal-footer {
+    padding: 14px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 8px;
+
+    border-top: 1px solid #ccc;
+
+    background-color: #f1f1f1;
+}
+
+
+
+/* =========================================================
+   SAVED BUDGET ITEM
+========================================================= */
+
+.budget-item-card {
+    border-bottom: 1px solid #ddd;
+
+    background-color: white;
+}
+
+
+.budget-item-card:last-child {
+    border-bottom: none;
+}
+
+
+.budget-item-card-header {
+    padding: 16px 18px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.budget-item-name {
+    margin: 0 0 5px;
+
+    color: #333;
+
+    font-size: 15px;
+
+    font-weight: 600;
+}
+
+
+.budget-item-description-display {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+.budget-item-card-total {
+    flex-shrink: 0;
+
+    color: #333;
+
+    font-size: 17px;
+
+    font-weight: 600;
+}
+
+
+
+/* =========================================================
+   ITEM DETAILS
+========================================================= */
+
+.budget-item-details {
+    padding: 0 18px 16px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+}
+
+
+.budget-item-detail {
+    color: #666;
+
+    font-size: 11px;
+}
+
+
+.budget-item-detail strong {
+    margin-right: 4px;
+
+    color: #444;
+}
+
+
+
+/* =========================================================
+   ITEM ACTIONS
+========================================================= */
+
+.budget-item-actions {
+    padding: 10px 18px;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 8px;
+
+    border-top: 1px solid #eee;
+
+    background-color: #fafafa;
+}
+
+
+.budget-item-action-button {
+    padding: 5px 9px;
+
+    border: 1px solid #bbb;
+
+    background-color: white;
+
+    color: #555;
+
+    font-size: 11px;
+}
+
+
+.budget-item-action-button:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+/* =========================================================
+   BLOCK 10 MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .budget-modal-overlay {
+        padding: 15px 10px;
+    }
+
+
+    .budget-modal-body {
+        padding: 20px 16px;
+    }
+
+
+    .budget-number-row {
+        grid-template-columns: 1fr;
+    }
+
+
+    .budget-item-card-header {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+
+    .budget-item-details {
+        flex-direction: column;
+
+        gap: 7px;
+    }
+
+}
+
+/* =========================================================
+   30. BLOCK 11
+   SAVED REQUEST / FINISH LATER
+========================================================= */
+
+.saved-request-card {
+    border-left: 4px solid #d4a514;
+
+    background-color: white;
+}
+
+
+.saved-request-main {
+    padding: 20px 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+
+.saved-request-status {
+    display: inline-block;
+
+    margin-bottom: 7px;
+
+    color: #8a6d00;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.7px;
+}
+
+
+.saved-request-main h3 {
+    margin: 0 0 5px;
+
+    color: #333;
+
+    font-size: 15px;
+
+    font-weight: 600;
+}
+
+
+.saved-request-main p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 11px;
+}
+
+
+.saved-request-footer {
+    min-height: 36px;
+
+    padding: 0 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    border-top: 1px solid #eee;
+
+    background-color: #fafafa;
+
+    color: #777;
+
+    font-size: 10px;
+}
+
+
+.saved-request-footer strong {
+    color: #555;
+}
+
+
+@media (max-width: 650px) {
+
+    .saved-request-main {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+}
